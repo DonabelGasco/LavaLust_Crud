@@ -169,7 +169,7 @@ class Pagination
         } elseif ($this->page_num > $last_page) {
            $this->page_num = $last_page;
         }
-
+/*
         $offset = ($this->page_num - 1) * $this->rows_per_page;
         $this->page_array['limit'] = 'LIMIT '.$offset.',' .$this->rows_per_page;
         $this->page_array['current'] = $this->page_num;
@@ -180,7 +180,7 @@ class Pagination
         } else {
             $this->page_array['previous'] = $this->page_num - 1;
         }
-
+*/
         if ($this->page_num == $last_page)
         {
             $this->page_array['next'] = $last_page;
